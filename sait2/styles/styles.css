@@ -17,8 +17,8 @@
  body.noscroll {overflow: hidden;}
  a[target=gallery] {font-size: 16pt;}
  a[target=gallery]::before {
-    counter-increment: ph_links;
-    content: counter(ph_links) ". "; 
+  counter-increment: ph_links;
+  content: counter(ph_links);
  }
  header h1 {
     font: bold 42pt Verdana, sans-serif; 
@@ -40,7 +40,8 @@
     padding-right: 10pt;
     border-left-width: 20pt; 
     border-left-style: solid; 
-    border-left-color: grey; 
+    border-left-color: grey;
+    margin-right: 10px; 
     /* border-top-left-radius: 10pt; */
     /* border-radius: 10pt; */
  }
@@ -96,5 +97,18 @@ div#discography > div {
   margin: 5px; 
   text-align: center;
   width: 120px;
-
+}
+footer{
+  display: flex;
+    justify-content: end;
+}
+.footer-pallet {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  height: 57px;
+  width: 589px;}
+.footer-text {
+  color: aliceblue;
+  text-align: center;
 }

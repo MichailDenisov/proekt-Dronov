@@ -1,23 +1,27 @@
 body {font-family: Arial;
-	background-image:
-	repeating-linear-gradient(to right,
- white 0px,bisque 5px,white 10px); 
 	margin: 0px;
 }
  header {
 	background-color: white; 
 	height: 80pt; 
 	margin-bottom: 20pt;
-	 
+	left: 0pt; 
+	top: 0pt; 
+	right: 0pt; 
 }
+header, nav, main, footer {position: fixed;}
 main {
 	text-align: justify;
 	/* margin-left: 210px; */
+	left: 190px; 
+	top: 100pt; 
+	right: 0pt; 
+	bottom: 120pt;
+	background-image:
+	repeating-linear-gradient(to right,
+	white 0px,bisque 5px,white 10px); 
+	overflow: auto;
 	padding-left: 10px;
-	margin-right: 10px;
-	/* text-align: justify;
-    margin-right: 10px;
-    padding-left: 10px; */
 }
 .pos1, .pos2, .pos3, .pos4 {
 	position: absolute;
@@ -76,13 +80,6 @@ color: darksalmon;
     font-style: italic;
     color: darkred;
 }
-/*h1 {
-	font-size: 32pt;
-	font-family: Verdana;
-}
-em {
-	font-weight: normal;
-	} */
 p {
 	font-size: 12pt !important;
 	margin-top: 5pt;
@@ -100,10 +97,13 @@ p.greeting {
 	margin-left: 30pt;
 }
 footer {
-	position: relative;
+	/* position: relative; */
 	text-align: right; 
 	background-color: white; 
 	height: 120pt; 
+	left: 0pt;
+	right: 0pt;
+	bottom: 0pt;
 }
 .bigger	{
 	font-size: 16pt
@@ -132,15 +132,17 @@ nav {
 	width: 150px;
 	/* margin: 10px 40px 20px 0px;  */
 	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.7);
+	left: 0pt;
+	top: 100pt;
+	bottom: 120pt;
+	background-color: bisque;
 }
 nav div, nav a {
 		font-size: 20pt;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-nav a {display: block;
-}
+nav a {display: block;}
  nav a:link, nav a:visited {  
 	color: darkred; 
 	text-decoration: none;
@@ -165,10 +167,6 @@ table.pricelist td:last-child:not(:only-child) {
 	border: none;
 	background-color: lightgray;
 }
-/* div#tablecont > div > * {
-    display: table-cell;
-    vertical-align: top;
-} */
 @font-face {
 	font-family: "Caviar Dreams"; 
 	src: url(../fonts/CaviarDreams.ttf);
@@ -247,14 +245,5 @@ input:invalid{
 .img_suhi {
 	height: 100%;
 }
-div#tablecont {
-display: table; 
-width: 100%; 
-border-collapse: collapse; 
-}
-div#tablecont > div { display: table-row; }
-div#tablecont > div > * {
-	display: table-cell;
-	vertical-align: top;
-} 
+
 

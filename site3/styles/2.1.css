@@ -7,17 +7,13 @@ body {font-family: Arial;
  header {
 	background-color: white; 
 	height: 80pt; 
-	margin-bottom: 20pt;
+	/* margin-bottom: 20pt; */
 	 
 }
 main {
 	text-align: justify;
-	/* margin-left: 210px; */
-	padding-left: 10px;
 	margin-right: 10px;
-	/* text-align: justify;
-    margin-right: 10px;
-    padding-left: 10px; */
+	padding-left: 10px;
 }
 .pos1, .pos2, .pos3, .pos4 {
 	position: absolute;
@@ -128,19 +124,16 @@ tfoot {font-style: italic;
 	font-weight: 10px; 
 }
 nav {
-	/* float: left;   */
 	width: 150px;
-	/* margin: 10px 40px 20px 0px;  */
 	padding: 10px;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 nav div, nav a {
-		font-size: 20pt;
+	font-size: 20pt;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-nav a {display: block;
-}
+nav a {display: block;}
  nav a:link, nav a:visited {  
 	color: darkred; 
 	text-decoration: none;
@@ -165,10 +158,6 @@ table.pricelist td:last-child:not(:only-child) {
 	border: none;
 	background-color: lightgray;
 }
-/* div#tablecont > div > * {
-    display: table-cell;
-    vertical-align: top;
-} */
 @font-face {
 	font-family: "Caviar Dreams"; 
 	src: url(../fonts/CaviarDreams.ttf);
